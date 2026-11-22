@@ -1,11 +1,85 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="星屿AI学院：通过课程、项目和智能实验室掌握人工智能。"><title>星屿 AI 学院｜用 AI 创造未来</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="blog.css"><style>html,body{overflow-x:hidden}</style><script src="script.js" defer></script></head><body>
-<header><a class="logo" href="#top"><i>✦</i><b>星屿 AI 学院</b></a><nav id="nav"><a href="#courses">学习路径</a><a href="#lab">AI 实验室</a><a href="#mentors">导师团队</a><a href="#community">学习社区</a><a href="#blog">我的 Blog</a></nav><div class="head-actions"><button id="searchOpen" aria-label="搜索">⌕</button><button class="login" id="loginOpen">登录</button><a class="btn small" href="#courses">免费开始</a><button class="menu" id="menu">☰</button></div></header>
-<main id="top"><section class="hero"><div class="hero-copy"><p class="eyebrow"><span></span> 2026 全新 AI 学习路径已上线</p><h1>不只学习 AI，<br><em>更要用 AI 创造。</em></h1><p class="lead">从零基础到独立构建 AI 应用，以真实项目驱动学习，掌握真正面向未来的能力。</p><div class="hero-actions"><a class="btn" href="#courses">探索学习路径 <b>→</b></a><button class="video" id="video"><i>▶</i>观看 90 秒介绍</button></div><div class="proof"><div><i>林</i><i>周</i><i>陈</i><i>+</i></div><b>已有 28,000+ 学习者加入</b><span>★★★★★ 4.9</span></div></div><div class="hero-art"><div class="grid"></div><div class="sphere">AI</div><div class="code"><small>● ● ●　ai_assistant.py</small><pre><b>from</b> xinyu <b>import</b> Agent<br><br>agent = Agent(<i>'学习教练'</i>)<br>agent.learn(your_idea)<br><br><span>✓ 模型训练完成</span></pre></div><div class="progress"><small>本周学习进度</small><b>82%</b><i><span></span></i></div><div class="streak">🔥 <b>12 天</b><small>连续学习</small></div></div><div class="brands"><small>合作与认可</small><b>清华大学</b><b>MICROSOFT</b><b>腾讯云</b><b>Google Cloud</b><b>NVIDIA</b></div></section>
-<section class="courses" id="courses"><div class="section-title"><div><p class="eyebrow">PERSONALIZED PATHS</p><h2>选择你的 AI 学习路径</h2></div><p>不论你从哪里出发，都能找到适合自己的路线。每条路径都以真实项目为终点。</p></div><div class="filters"><button class="active" data-filter="all">全部路径</button><button data-filter="beginner">零基础入门</button><button data-filter="creator">内容与设计</button><button data-filter="developer">开发与工程</button><button data-filter="business">商业与效率</button></div><div class="course-grid" id="courseGrid"></div><p id="empty" hidden>没有找到匹配的课程，换个关键词试试。</p></section>
-<section class="lab" id="lab"><div><p class="eyebrow mint">LEARN BY BUILDING</p><h2>在 AI 实验室里，<br>把想法变成作品。</h2><p>无需复杂配置，打开浏览器即可使用主流模型与数据工具。智能教练陪你完成第一个 AI 应用。</p><ul><li><i>01</i><span><b>即时运行环境</b><small>预装 Python、AI 框架与模型接口</small></span></li><li><i>02</i><span><b>AI 智能助教</b><small>实时解释概念、定位错误、提供提示</small></span></li><li><i>03</i><span><b>作品集发布</b><small>一键分享项目，获得社区反馈</small></span></li></ul><button class="btn" id="tryLab">免费体验实验室 ↗</button></div><div class="ide"><div class="bar"><i></i><i></i><i></i><span>星屿 AI Lab</span><b>运行 ▶</b></div><div class="workspace"><aside>▾ 项目文件<br><strong>◈ app.py</strong><br>◇ data.csv<br>◇ README.md</aside><pre><em>1</em> <b>import</b> xinyu_ai <b>as</b> ai<br><em>2</em><br><em>3</em> model = ai.<i>create</i>(<span>'classifier'</span>)<br><em>4</em> model.<i>train</i>(dataset)<br><em>5</em><br><em>6</em> result = model.<i>predict</i>(image)</pre><div class="result"><small>模型准确率</small><strong>96.4%</strong><div><i></i><i></i><i></i><i></i><i></i></div><span>训练完成 · 2.4s</span></div></div></div></section>
-<section class="mentors" id="mentors"><div class="section-title"><div><p class="eyebrow">REAL EXPERTS</p><h2>向真正实践 AI 的人学习</h2></div><p>课程由一线研究者、工程师与创作者共同设计，知识始终与行业同步。</p></div><div class="mentor-grid"><article><div class="portrait blue">JL</div><small>大语言模型 · NLP</small><h3>林谨言 博士</h3><p>前沿 AI 研究员，专注于自然语言理解与智能体系统。</p></article><article><div class="portrait purple">SY</div><small>生成式设计 · 创意 AI</small><h3>沈一诺</h3><p>创意科技导演，帮助团队构建 AI 原生内容工作流。</p></article><article><div class="portrait green">WZ</div><small>机器学习 · MLOps</small><h3>王至远</h3><p>资深 AI 工程师，拥有大规模模型部署实战经验。</p></article></div></section>
-<section class="community" id="community"><div><p class="eyebrow mint">LEARN TOGETHER</p><h2>一个人开始，<br>和一群人走得更远。</h2><p>参加每周挑战、作品评审与线上分享，让成长持续发生。</p><div class="stats"><span><b>28K+</b><small>活跃学习者</small></span><span><b>6,400+</b><small>已发布项目</small></span><span><b>86%</b><small>课程完成率</small></span></div><a class="btn mint-btn" href="#signup">加入学习社区 →</a></div><div class="chats"><article><i>安</i><p><b>安然</b><small>刚刚</small><br>第一个 RAG 知识库跑通了！🎉</p></article><article><i>哲</i><p><b>明哲</b><small>3 分钟前</small><br>分享一个特别好用的提示词结构。</p></article><article><i>思</i><p><b>思琪</b><small>8 分钟前</small><br>今日作品挑战完成，欢迎大家提建议！</p></article></div></section>
-<section class="blog" id="blog"><div class="blog-heading"><div><p class="eyebrow">MY BLOG</p><h2>我的 AI 学习笔记</h2></div><p>记录我对人工智能、学习方法与数字创造的思考，把复杂概念讲得简单而有用。</p></div><article class="featured-post"><div class="featured-art" role="img" aria-label="由发光节点组成的抽象人工智能网络"><span>AI</span><i></i><i></i><i></i></div><div class="featured-copy"><p class="post-meta">精选文章 · 8 分钟阅读</p><h3>从提问到共创：我如何把 AI 变成真正的学习伙伴</h3><p>AI 的价值不只是更快获得答案，而是帮助我们提出更好的问题、发现盲点，并把模糊想法一步步变成作品。</p><div class="post-author"><span>XY</span><p><b>Xinyu</b><small>2026 年 11 月 22 日</small></p></div><a href="#blog-posts">阅读全文 <b>→</b></a></div></article><div class="post-grid" id="blog-posts"><article><div class="post-art violet">01</div><p class="post-meta">AI 基础 · 6 分钟</p><h3>大语言模型到底在做什么？</h3><p>用不需要数学背景的方式，理解 Token、预测与上下文。</p><a href="#blog">阅读文章 →</a></article><article><div class="post-art mint-art">02</div><p class="post-meta">效率方法 · 5 分钟</p><h3>三个步骤，写出更有效的提示词</h3><p>从目标、背景到输出格式，建立可以重复使用的提示框架。</p><a href="#blog">阅读文章 →</a></article><article><div class="post-art amber">03</div><p class="post-meta">学习随笔 · 7 分钟</p><h3>为什么做项目比收藏教程更重要</h3><p>真正的能力来自解决问题，而不是看完更多内容。</p><a href="#blog">阅读文章 →</a></article></div><div class="blog-more"><button id="loadPosts">查看更多文章 <span>↓</span></button></div></section>
-<section class="signup" id="signup"><p class="eyebrow">YOUR NEXT CHAPTER</p><h2>未来已经开始。<br>你准备好了吗？</h2><p>免费注册，立即解锁 20+ 节入门课程与 AI 实验室体验。</p><form id="signupForm"><label for="email">电子邮箱</label><div><input id="email" type="email" required placeholder="请输入你的邮箱"><button>免费开始学习 →</button></div><small>无需信用卡 · 随时学习 · 永久保留进度</small></form></section></main>
-<footer><div><a class="logo" href="#top"><i>✦</i><b>星屿 AI 学院</b></a><p>让每个人都能理解、使用并创造 AI。</p></div><div><b>学习</b><a href="#courses">课程中心</a><a href="#lab">AI 实验室</a><a href="#community">学习社区</a></div><div><b>关于</b><a href="#mentors">导师团队</a><a href="#community">学习故事</a></div><div><b>支持</b><a href="#signup">帮助中心</a><a href="#signup">常见问题</a></div><small>© 2026 星屿 AI 学院 · 本站为前端展示项目</small></footer>
-<div class="search" id="search"><label for="searchInput">搜索课程</label><input id="searchInput" type="search" placeholder="试试‘提示词’或‘Python’"><button id="searchClose">×</button></div><div class="modal" id="modal"><div><button id="modalClose">×</button><i>✦</i><h2>欢迎来到星屿</h2><p>登录功能为演示。输入姓名，体验个性化欢迎。</p><form id="loginForm"><label for="name">你的名字</label><input id="name" required placeholder="例如：小宇"><button class="btn">进入学习空间 →</button></form></div></div><div class="toast" id="toast"></div></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="蔡欣渝，多领域成长导师与个人IP，连接AI智能应用、健康美容、灵性探索与公益影响力。">
+  <meta name="theme-color" content="#120c18">
+  <title>蔡欣渝｜让人生拥有更多可能</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="蔡欣渝首页"><span class="brand-cn">欣渝</span><span class="brand-en">XINYU</span></a>
+    <nav id="mainNav" aria-label="主导航"><a href="#about">关于我</a><a href="#domains">探索领域</a><a href="#services">服务内容</a><a href="#philosophy">个人理念</a><a href="#blog">Blog</a></nav>
+    <a class="contact-pill" href="#contact">联系合作 <span>↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="打开菜单" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <img class="hero-image" src="assets/xinyu-hero.png" alt="蔡欣渝身穿香槟色西装的专业形象照">
+      <div class="hero-shade"></div><div class="hero-orbit"></div>
+      <div class="hero-content" data-reveal>
+        <p class="kicker">PEOPLE · TECHNOLOGY · WELLNESS · SPIRITUALITY · SOCIAL GOOD</p>
+        <p class="signature">欣渝 <small>X I N Y U</small></p>
+        <h1>让人生拥有<br><em>更多可能。</em></h1>
+        <p class="hero-intro">蔡欣渝｜多领域成长导师 · 个人 IP<br>AI × 健康美容 × 灵性探索 × 公益</p>
+        <p class="hero-belief">我教的，不只是一个技能，<br>而是让你拥有更多选择的能力。</p>
+        <div class="hero-actions"><a class="button gold" href="#domains">探索我的领域 <span>↓</span></a><a class="button ghost" href="#contact">联系合作 <span>↗</span></a></div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO DISCOVER</span><i></i><b>CREATE A BETTER ME · A BRIGHTER WORLD</b></div>
+    </section>
+
+    <section class="domains section-dark" id="domains">
+      <div class="section-heading" data-reveal><p class="overline">MY FOUR DOMAINS</p><h2>在不同领域，<br>打开同一种可能。</h2><p>科技给我们创造力，健康带来自信，向内探索获得力量，公益让成长拥有更深的意义。</p></div>
+      <div class="domain-tabs" role="tablist" aria-label="蔡欣渝的四个专业领域">
+        <button class="domain-tab is-active" id="tab-ai" role="tab" aria-selected="true" aria-controls="panel-ai" data-domain="ai"><span>01</span>AI 智能应用<small>AI APPLICATIONS</small></button>
+        <button class="domain-tab" id="tab-wellness" role="tab" aria-selected="false" aria-controls="panel-wellness" data-domain="wellness"><span>02</span>健康与美容<small>HEALTH & BEAUTY</small></button>
+        <button class="domain-tab" id="tab-spirit" role="tab" aria-selected="false" aria-controls="panel-spirit" data-domain="spirit"><span>03</span>灵性探索<small>SPIRITUAL EXPLORATION</small></button>
+        <button class="domain-tab" id="tab-impact" role="tab" aria-selected="false" aria-controls="panel-impact" data-domain="impact"><span>04</span>公益与社会影响力<small>SOCIAL IMPACT</small></button>
+      </div>
+      <div class="domain-stage" data-reveal>
+        <img src="assets/xinyu-domains.png" alt="蔡欣渝与AI、健康美容、灵性探索和公益四大领域的品牌视觉">
+        <div class="domain-panel is-active" id="panel-ai" role="tabpanel" aria-labelledby="tab-ai" data-panel="ai"><p>01 / AI APPLICATIONS</p><h3>用 AI，打开更多可能</h3><ul><li>AI 工具与工作流应用</li><li>内容创作与短视频</li><li>数字人与个人 IP</li><li>项目实践与商业应用</li></ul></div>
+        <div class="domain-panel" id="panel-wellness" role="tabpanel" aria-labelledby="tab-wellness" data-panel="wellness" hidden><p>02 / HEALTH & BEAUTY</p><h3>更健康，也更自信</h3><ul><li>健康管理与营养</li><li>美容护理与保养</li><li>个人形象与气质提升</li><li>身心平衡与自信生活</li></ul></div>
+        <div class="domain-panel" id="panel-spirit" role="tabpanel" aria-labelledby="tab-spirit" data-panel="spirit" hidden><p>03 / SPIRITUAL EXPLORATION</p><h3>向内探索，找到力量</h3><ul><li>玄学智慧与生命观察</li><li>阿卡西记录</li><li>灵性成长与自我探索</li><li>心灵疗愈与内在力量</li></ul></div>
+        <div class="domain-panel" id="panel-impact" role="tabpanel" aria-labelledby="tab-impact" data-panel="impact" hidden><p>04 / SOCIAL IMPACT</p><h3>让成长，成为温暖的影响力</h3><ul><li>公益项目连接与推动</li><li>凝聚爱心与资源</li><li>帮助更多需要帮助的人</li><li>用行动让世界更美好</li></ul></div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-image" data-reveal><img src="assets/xinyu-domains.png" alt="蔡欣渝多领域个人品牌全景"><span>MORE POSSIBILITIES<br>TOGETHER</span></div>
+      <div class="about-copy" data-reveal><p class="overline dark">ABOUT XINYU</p><h2>成长，从来不只<br>有一条路径。</h2><p class="large-copy">我相信，真正的成长不是把自己限制在一个标签里，而是在不同人生阶段，找到最适合自己的工具、智慧和行动。</p><p>从科技应用到健康生活，从向内探索到社会连接，我希望分享真正能够帮助人们改变生活的知识与经验。让自己变得更好，也让别人因为你而变得更好。</p><div class="signature-mark">欣渝 <small>蔡欣渝</small></div></div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="section-heading light" data-reveal><p class="overline">WAYS TO GROW</p><h2>与你一起，把可能<br>变成真实的改变。</h2></div>
+      <div class="service-grid">
+        <article data-reveal><span>01</span><i>✦</i><h3>AI 赋能与个人 IP</h3><p>把 AI 从“听说过”变成真正能够提升效率、表达与创造力的日常伙伴。</p><ul><li>AI 工具实战</li><li>内容与短视频</li><li>数字人创作</li></ul></article>
+        <article data-reveal><span>02</span><i>◇</i><h3>健康美容与生活方式</h3><p>从内在状态到外在表达，建立更健康、更自信、更松弛的生活方式。</p><ul><li>健康与营养</li><li>美容与保养</li><li>形象气质提升</li></ul></article>
+        <article data-reveal><span>03</span><i>☾</i><h3>内在探索与成长</h3><p>在忙碌世界里重新听见自己，理解内在模式，找到清晰而稳定的力量。</p><ul><li>灵性探索</li><li>自我觉察</li><li>心灵成长</li></ul></article>
+        <article data-reveal><span>04</span><i>◎</i><h3>公益连接与影响力</h3><p>让个人成长不止服务自己，也能连接资源、凝聚善意，创造温暖影响。</p><ul><li>公益连接</li><li>项目推动</li><li>社会影响力</li></ul></article>
+      </div>
+    </section>
+
+    <section class="philosophy" id="philosophy">
+      <p class="overline" data-reveal>MY PHILOSOPHY</p><blockquote data-reveal>“我教的不只是一个技能，<br>而是让你拥有<em>更多选择</em>的能力。”</blockquote>
+      <div class="values"><span><b>创造力</b><small>TECHNOLOGY</small></span><span><b>健康力</b><small>WELLNESS</small></span><span><b>内在力</b><small>SPIRITUALITY</small></span><span><b>影响力</b><small>COMMUNITY</small></span></div>
+    </section>
+
+    <section class="blog" id="blog">
+      <div class="section-heading" data-reveal><p class="overline dark">XINYU'S JOURNAL</p><h2>欣渝的思考与分享</h2><p>关于 AI、成长、健康与人生选择的真实记录。</p></div>
+      <div class="post-grid"><article data-reveal><span>AI · 8 MIN</span><h3>从提问到共创：<br>把 AI 变成学习伙伴</h3><p>AI 的价值不只是更快得到答案，而是帮助我们提出更好的问题。</p><a href="#blog">阅读文章 →</a></article><article data-reveal><span>GROWTH · 6 MIN</span><h3>真正的成长，<br>不需要只有一种答案</h3><p>跨领域并不是分心，而是用更多视角理解自己与世界。</p><a href="#blog">阅读文章 →</a></article><article data-reveal><span>WELLNESS · 5 MIN</span><h3>先照顾好自己，<br>才有力量照亮别人</h3><p>健康、自信与内在稳定，是一切长期影响力的起点。</p><a href="#blog">阅读文章 →</a></article></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div data-reveal><p class="overline">LET'S CREATE POSSIBILITIES</p><h2>一起创造，<br>更多可能。</h2></div><div class="contact-copy" data-reveal><p>课程分享、品牌合作、公益项目或跨领域共创，欢迎与我联系。</p><p class="contact-placeholder">联系方式 · [待填写]</p><a class="button gold" href="#home">返回首页 <span>↑</span></a></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#home"><span class="brand-cn">欣渝</span><span class="brand-en">XINYU</span></a><p>让自己变得更好，也让别人因为你而变得更好。</p><span>© 2026 蔡欣渝 · PERSONAL BRAND</span></footer>
+</body>
+</html>
