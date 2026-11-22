@@ -37,12 +37,14 @@ const menuToggle = document.querySelector('#menuToggle');
 const mainNav = document.querySelector('#mainNav');
 function closeMenu() {
   menuToggle.setAttribute('aria-expanded', 'false');
+  menuToggle.setAttribute('aria-label', '打开菜单');
   mainNav.classList.remove('open');
   document.body.classList.remove('menu-open');
 }
 menuToggle.addEventListener('click', () => {
   const open = menuToggle.getAttribute('aria-expanded') !== 'true';
   menuToggle.setAttribute('aria-expanded', String(open));
+  menuToggle.setAttribute('aria-label', open ? '关闭菜单' : '打开菜单');
   mainNav.classList.toggle('open', open);
   document.body.classList.toggle('menu-open', open);
 });
