@@ -2,9 +2,10 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 
-const html = readFileSync(new URL('../Xinyu Website Contain/index.html', import.meta.url), 'utf8');
-const css = readFileSync(new URL('../Xinyu Website Contain/styles.css', import.meta.url), 'utf8');
-const js = readFileSync(new URL('../Xinyu Website Contain/script.js', import.meta.url), 'utf8');
+const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+const css = readFileSync(new URL('../styles.css', import.meta.url), 'utf8');
+const js = readFileSync(new URL('../script.js', import.meta.url), 'utf8');
+const testSource = readFileSync(new URL('./landing.test.mjs', import.meta.url), 'utf8');
 
 test('renders Cai Xinyu personal brand identity and required sections', () => {
   assert.match(html, /蔡欣渝/);
@@ -65,4 +66,27 @@ test('enhances mobile navigation and scroll reveals without external libraries',
   assert.match(js, /menuToggle/);
   assert.match(js, /IntersectionObserver/);
   assert.doesNotMatch(js, /jquery|gsap/i);
+});
+
+test('tests the committed deployment files instead of an untracked source copy', () => {
+  assert.doesNotMatch(testSource, /new URL\('\.\.\/Xinyu Website Contain/);
+});
+
+test('keeps core content and mobile navigation available without JavaScript', () => {
+  assert.doesNotMatch(css, /(?:^|})\[data-reveal\]\{opacity:0/m);
+  assert.match(css, /\.js\s+\[data-reveal\]/);
+  assert.match(css, /\.js\s+\.site-header\s+nav/);
+  assert.match(js, /documentElement\.classList\.add\(['"]js['"]\)/);
+});
+
+test('retains the original blog topics without dead read-article links', () => {
+  assert.match(html, /大语言模型到底在做什么/);
+  assert.match(html, /三个步骤，写出更有效的提示词/);
+  assert.match(html, /为什么做项目比收藏教程更重要/);
+  assert.doesNotMatch(html, /href="#blog">阅读文章/);
+});
+
+test('releases mobile menu scroll lock when viewport becomes desktop', () => {
+  assert.match(js, /matchMedia\(['"]\(max-width:\s*900px\)['"]\)/);
+  assert.match(js, /addEventListener\(['"]change['"],\s*[^)]*closeMenu/);
 });

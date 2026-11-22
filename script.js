@@ -1,3 +1,5 @@
+document.documentElement.classList.add('js');
+
 const domainTabs = [...document.querySelectorAll('.domain-tab')];
 const domainPanels = [...document.querySelectorAll('.domain-panel')];
 
@@ -45,6 +47,8 @@ menuToggle.addEventListener('click', () => {
   document.body.classList.toggle('menu-open', open);
 });
 mainNav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+const mobileViewport = window.matchMedia('(max-width: 900px)');
+mobileViewport.addEventListener('change', closeMenu);
 
 const header = document.querySelector('#siteHeader');
 function updateHeader() { header.classList.toggle('scrolled', window.scrollY > 24); }
