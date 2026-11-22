@@ -15,4 +15,5 @@ $('#loginOpen').onclick=()=>$('#modal').classList.add('open');$('#modalClose').o
 $('#loginForm').onsubmit=e=>{e.preventDefault();$('#modal').classList.remove('open');toast(`欢迎回来，${$('#name').value}！`)};
 $('#menu').onclick=()=>$('#nav').classList.toggle('open');document.querySelectorAll('#nav a').forEach(a=>a.onclick=()=>$('#nav').classList.remove('open'));
 $('#video').onclick=()=>toast('介绍视频即将上线');$('#tryLab').onclick=()=>toast('AI 实验室演示已为你开启');
+$('#loadPosts').onclick=()=>toast('更多学习笔记正在整理中，敬请期待');
 $('#signupForm').onsubmit=e=>{e.preventDefault();toast('注册成功，欢迎开启 AI 学习之旅！');e.target.reset()};render();
